@@ -7,20 +7,20 @@
 //
 
 #import "WebViewController.h"
+@import WebKit;
 
 @interface WebViewController ()
 
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet WKWebView *webView;
 
 @end
 
 @implementation WebViewController
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
     
-    self.title = (self.webLink).host;
+    self.title = self.webLink.host;
     
     [self.webView loadRequest:[NSURLRequest requestWithURL:self.webLink]];
 }

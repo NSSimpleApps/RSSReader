@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e8Q-Rf-LbP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e8Q-Rf-LbP">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,19 +14,19 @@
             <objects>
                 <tableViewController id="h2u-XN-ccI" customClass="FeedsViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZqV-W8-ZZX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="dBy-ob-3aZ" style="IBUITableViewCellStyleDefault" id="CI4-se-EZU">
-                                <rect key="frame" x="0.0" y="86" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CI4-se-EZU" id="xcx-VR-z8i">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dBy-ob-3aZ">
-                                            <frame key="frameInset" minX="15" width="345" height="43"/>
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,9 +49,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="play" id="MEB-iq-NTV">
                             <connections>
-                                <segue destination="od3-fo-NyX" kind="show" identifier="ShowNewsSegue" id="a8n-rP-RTn">
-                                    <nil key="action"/>
-                                </segue>
+                                <segue destination="od3-fo-NyX" kind="show" identifier="ShowNewsSegue" id="a8n-rP-RTn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -63,26 +63,26 @@
             <objects>
                 <tableViewController id="od3-fo-NyX" customClass="NewsViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gfq-z6-ffH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="WLi-Hz-jBc" detailTextLabel="S4K-xf-5Yz" style="IBUITableViewCellStyleSubtitle" id="SS0-c9-yQc">
-                                <rect key="frame" x="0.0" y="86" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SS0-c9-yQc" id="37O-EP-GW0">
-                                    <frame key="frameInset" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WLi-Hz-jBc">
-                                            <frame key="frameInset" minX="15" minY="5" width="32" height="20"/>
+                                            <rect key="frame" x="20" y="6" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S4K-xf-5Yz">
-                                            <frame key="frameInset" minX="15" minY="25" width="41" height="14"/>
+                                            <rect key="frame" x="20" y="25.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -91,9 +91,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gXU-QP-8nK" kind="show" identifier="ShowDetailsSegue" id="6O4-ci-jvK">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="gXU-QP-8nK" kind="show" identifier="ShowDetailsSegue" id="6O4-ci-jvK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -117,10 +115,11 @@
                         <viewControllerLayoutGuide type="bottom" id="8lu-bR-AjD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yff-mS-762">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXS-Bq-Tyu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -137,9 +136,7 @@
                     <navigationItem key="navigationItem" title="Details" id="bMA-h1-8fw">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="D8X-dP-Rbl">
                             <connections>
-                                <segue destination="2tK-LM-0Kr" kind="show" identifier="ShowWebViewSegue" id="VZD-7Q-Ay8">
-                                    <nil key="action"/>
-                                </segue>
+                                <segue destination="2tK-LM-0Kr" kind="show" identifier="ShowWebViewSegue" id="VZD-7Q-Ay8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -160,28 +157,33 @@
                         <viewControllerLayoutGuide type="bottom" id="eqg-PO-0yZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xwb-HK-LrW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEb-0B-BCV">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3Z-1u-wZa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eqg-PO-0yZ" firstAttribute="top" secondItem="lEb-0B-BCV" secondAttribute="bottom" id="TaB-8X-OWS"/>
-                            <constraint firstItem="lEb-0B-BCV" firstAttribute="top" secondItem="7ZD-1w-Mht" secondAttribute="bottom" id="Tl9-Di-YP0"/>
-                            <constraint firstItem="lEb-0B-BCV" firstAttribute="leading" secondItem="xwb-HK-LrW" secondAttribute="leadingMargin" constant="-20" id="f8R-P0-LRL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lEb-0B-BCV" secondAttribute="trailing" constant="-20" id="gMH-tT-9TU"/>
+                            <constraint firstItem="L3Z-1u-wZa" firstAttribute="leading" secondItem="xwb-HK-LrW" secondAttribute="leading" id="1Ox-Of-cEf"/>
+                            <constraint firstItem="eqg-PO-0yZ" firstAttribute="top" secondItem="L3Z-1u-wZa" secondAttribute="bottom" id="4R9-bt-t3v"/>
+                            <constraint firstAttribute="trailing" secondItem="L3Z-1u-wZa" secondAttribute="trailing" id="Ll5-Zk-aSE"/>
+                            <constraint firstItem="L3Z-1u-wZa" firstAttribute="top" secondItem="7ZD-1w-Mht" secondAttribute="bottom" id="vxM-AZ-rvh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="lEb-0B-BCV" id="15j-fY-tMQ"/>
+                        <outlet property="webView" destination="L3Z-1u-wZa" id="ZsP-nN-QX6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptk-Io-Zl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3226" y="393"/>
+            <point key="canvasLocation" x="3224.6376811594205" y="392.41071428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J46-E8-VyH">
@@ -189,7 +191,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e8Q-Rf-LbP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xcG-uu-nDk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
