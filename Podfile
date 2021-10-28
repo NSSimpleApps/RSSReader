@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '12.2'
+platform :ios, '15.0'
 
 
 target 'RSSReader' do
